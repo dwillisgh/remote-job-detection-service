@@ -1,0 +1,33 @@
+@Library("cicd-global-library") _
+
+testPipeline {
+
+  // testing parameters
+  parameters = [
+    string(name: "TEST_ENV", description: "The testing environment name",       defaultValue: "dev-ams"),
+    string(name: "TEST_URL", description: "The url of application for testing", defaultValue: ""),
+    string(name: 'RELEASE', defaultValue: "stable", description: "Release of the service")
+  ]
+
+  buildType = "maven"
+  buildVersion = "3temurin17"
+  skipBuild = true
+  testCommand = {
+    dir("automatedTests") {
+       sh("mvn -s maven_settings.xml --no-transfer-progress -Durl=${TEST_URL} -Denv=${TEST_ENV} -Drelease=${RELEASE} clean install")
+    }
+   }
+
+  //Publishes generated test reports and attaches a link in the Jenkins nav bar within each build.
+  publishTestReportCommand = {
+     archiveArtifacts "automatedTests/target/**/*"
+     junit 'automatedTests/target/surefire-reports/*.xml'
+
+     publishHTML(target: [allowMissing: false,
+      alwaysLinkToLastBuild: true,
+      keepAll: true,
+      reportDir: 'automatedTests/target/spock-reports',
+      reportFiles: 'index.html',
+      reportName: "AutomatedTest Report"])
+  }
+ }

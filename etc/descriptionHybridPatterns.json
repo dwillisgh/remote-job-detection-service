@@ -1,0 +1,155 @@
+[
+     { "phrasePatterns" :  [
+            {"ORTH": "#"},
+            {"LOWER": "li"},
+            {"ORTH": "-"},
+            {"LOWER": "hybrid"}
+        ],
+        "matchTerm" : "#LI-Hybrid"
+     },
+     { "phrasePatterns" :  [
+            {"LOWER": "this"},
+            {"LOWER": "role"},
+            {"LEMMA": "be"},
+            {"LOWER": "offered"},
+            {"LOWER": "as"},
+            {"LOWER": "a"},
+            {"LOWER": "hybrid"},
+            {"ORTH": "(", "OP": "*"}, {"LOWER": "some"},
+            {"LOWER": "combination"},
+            {"LOWER": "of"},
+            {"LOWER": "onsite"},
+            {"LOWER": "and"},
+            {"LOWER": "remote"},
+            {"ORTH": ")", "OP": "*"}
+        ],
+        "matchTerm" : "this role is offered as a hybrid (some combination of onsite and remote)"
+     },
+     { "phrasePatterns" :  [
+            {"LOWER": "flexible"},
+            {"LOWER": "work"},
+            {"LOWER": "model"}
+        ],
+        "matchTerm" : "flexible work model"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "this"},
+           {"LOWER": "position"},
+           {"LOWER": "operates"},
+           {"LOWER": "on"},
+           {"LOWER": "a"},
+           {"LOWER": "hybrid"},
+          {"LOWER": "schedule"}
+        ],
+        "matchTerm" : "This position operates on a hybrid schedule"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "work"},
+           {"LOWER": "options"},
+           {"LOWER": "available"}
+        ],
+        "matchTerm" : "Hybrid work options available"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "role"}
+        ],
+        "matchTerm" : "Hybrid role"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "position"}
+        ],
+        "matchTerm" : "hybrid position"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "schedule"}
+        ],
+        "matchTerm" : "hybrid schedule"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "model"}
+        ],
+        "matchTerm" : "hybrid model"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "three"},
+           {"LOWER": "days"},
+           {"LOWER": "in"},
+           {"LOWER": "the"},
+           {"LOWER": "office"},
+           {"LOWER": "and"},
+           {"LOWER": "two"},
+           {"LOWER": "days"},
+           {"LOWER": "remote"}
+        ],
+        "matchTerm" : "three days in the office and two days remote"
+     },
+     { "phrasePatterns" :  [
+          {"LOWER": "option"},
+         {"LOWER": "for"},
+         {"LOWER": "partial"},
+         {"LOWER": "remote"},
+         {"LOWER": "work"}
+        ],
+        "matchTerm" : "option for partial remote work"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "split"},
+           {"LOWER": "between"},
+           {"LOWER": "home"},
+           {"LOWER": "and"},
+           {"LOWER": "office"}
+        ],
+        "matchTerm" : "split between home and office"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "hybrid"},
+           {"LOWER": "setup"}
+        ],
+        "matchTerm" : "Hybrid setup"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "a"},
+           {"LOWER": "flexible"},
+           {"LOWER": "hybrid"},
+           {"ORTH": "-"},
+           {"LOWER": "remote"},
+           {"LOWER": "work"},
+           {"LOWER": "schedule"},
+           {"LOWER": "is"},
+           {"LOWER": "available"}
+     ],
+        "matchTerm" : "A flexible hybrid-remote work schedule is available"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "this"},
+           {"LOWER": "is"},
+           {"LOWER": "a"},
+           {"LOWER": "hybrid"},
+           {"ORTH": "(", "OP": "*"},
+           {"LOWER": "in"},
+           {"ORTH": "-"},
+           {"LOWER": "person"},
+           {"ORTH": "/"},
+           {"LOWER": "remote"},
+           {"ORTH": ")", "OP": "*"},
+           {"LOWER": "position"}
+
+     ],
+        "matchTerm" : "This is a Hybrid (In-person/Remote) position"
+     },
+      { "phrasePatterns" :  [
+           {"LOWER": "this"},
+           {"LOWER": "is"},
+           {"LOWER": "a"},
+           {"LOWER": "hybrid"},
+           {"LOWER": "work"},
+           {"LOWER": "environment"}
+     ],
+        "matchTerm" : "This is a hybrid work environment"
+     }
+]

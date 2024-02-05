@@ -1,0 +1,7 @@
+ [
+     { "phrasePatterns" :  [
+            {"LOWER": "remote"}
+        ],
+        "matchTerm" : "remote"
+     }
+  ]

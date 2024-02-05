@@ -1,0 +1,5 @@
+@Library('cicd-global-library') _
+
+spinnakerPipeline {
+  domain = "jobs"
+}

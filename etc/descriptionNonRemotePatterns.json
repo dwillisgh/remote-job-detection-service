@@ -1,0 +1,60 @@
+[
+     { "phrasePatterns" :  [
+             {"LOWER": "remote"},
+            {"ORTH": ":"},
+            {"LOWER": "no"}
+        ],
+        "matchTerm" : "remote: no"
+     },
+     { "phrasePatterns" :  [
+           {"LOWER": "required"},
+            {"POS": "ADP"},
+            {"LOWER": "work"},
+            {"POS": "ADP"},
+            {"POS": "DET"},
+            {"LOWER": "primary"},
+            {"LOWER": "work"},
+            {"LOWER": "location"}
+        ],
+        "matchTerm" : "required to work from the primary work location"
+     },
+     { "phrasePatterns" :  [
+          {"LOWER": "this"},
+            {"LEMMA": "be"},
+            {"LOWER": "not"},
+            {"POS": "DET"},
+            {"LOWER": "remote"},
+            {"LOWER": "position"}
+        ],
+        "matchTerm" : "This is not a remote position"
+     },
+   { "phrasePatterns" :  [
+          {"LOWER": "position"},
+            {"LEMMA": "be"},
+            {"LOWER": "in"},
+            {"POS": "PROPN", "OP": "?"},
+            {"POS": "NOUN", "OP": "?"},
+            {"LOWER": "and"},
+             {"LEMMA": "be", "OP": "?"},
+            {"LOWER": "not"},
+            {"LOWER": "eligible"},
+            {"LOWER": "for"},
+            {"LOWER": "remote"}
+        ],
+        "matchTerm" : "Position is in Minneapolis and not eligible for remote."
+     },
+     { "phrasePatterns" :  [
+          {"LOWER": "this"},
+          {"LOWER": "role"},
+          {"LEMMA": "be"},
+          {"LOWER": "not"},
+          {"LOWER": "a"},
+          {"LOWER": "hybrid"},
+          {"LOWER": "or"},
+          {"LOWER": "remote"},
+          {"LOWER": "role"}
+        ],
+        "matchTerm" : "This role is not a hybrid or remote role"
+     }
+
+  ]

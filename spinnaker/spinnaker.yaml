@@ -1,0 +1,28 @@
+# ~~~~~~~~~~~~~~~~~~~~
+# Pipeline Definitions
+# ~~~~~~~~~~~~~~~~~~~~
+pipelines:
+
+# Kubernetes Deployment Pipelines
+- type: kubernetes
+  includeAccounts:
+    - ams-mww-next-app-dev-us
+    - ams-mww-next-app-preprod-us
+    - ams-mww-next-app-prod-us
+  notifications:
+    slack:
+      - "jobs-remote-job-detection-service"
+- type: iac
+  includeBranches:
+    - master
+  includeAccounts:
+    - ams-mww-next-data-dev-us
+    - ams-mww-next-data-preprod-us
+    - ams-mww-next-data-prod-us
+  notifications:
+    slack:
+      - "jobs-remote-job-detection-service"
+  terraform:
+    envVars: "GITHUB_BRANCH=@{ branchName },LOG_LEVEL=DEBUG"
+  testEnabled: false
+  rollbackFailedTests: false

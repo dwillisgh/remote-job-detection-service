@@ -1,0 +1,189 @@
+[
+     { "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "sensing"}
+        ],
+        "matchTerm" : "remote sensing"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "resolve"},
+            {"LOWER": "issues"},
+            {"LOWER": "remotely"},
+            {"LOWER": "first"}
+          ],
+          "matchTerm" : "resolve issues remotely first"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "parts"},
+            {"POS": "ADP"},
+            {"POS": "DET"},
+            {"LOWER": "world"}
+          ],
+          "matchTerm" : "remote parts of the world"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "clients"}
+          ],
+          "matchTerm" : "remote clients"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "resolve"},
+            {"LOWER": "issues"},
+            {"LOWER": "remotely"},
+            {"LOWER": "first"}
+          ],
+          "matchTerm" : "resolve issues remotely first"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "sites"}
+          ],
+          "matchTerm" : "remote sites"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "system"}
+           ],
+          "matchTerm" : "remote system"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "devices"}
+          ],
+          "matchTerm" : "remote devices"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "video"}
+          ],
+          "matchTerm" : "remote video"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "doctor"}
+          ],
+          "matchTerm" : "remote doctor"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "desktop"}
+          ],
+          "matchTerm" : "remote desktop"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "controlled"}
+          ],
+          "matchTerm" : "remote controlled"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "interview"}
+          ],
+          "matchTerm" : "remote interview"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+            {"LOWER": "data"}
+          ],
+          "matchTerm" : "remote data"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "remote"},
+           {"LOWER": "endpoint"},
+           {"LOWER": "management"}
+          ],
+          "matchTerm" : "remote endpoint management"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "pay"},
+            {"POS": "CONJ"},
+            {"LOWER": "remote"},
+            {"LOWER": "deposit"}
+          ],
+          "matchTerm" : "pay and remote deposit"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "interviews"},
+            {"LEMMA": "be"},
+            {"LOWER": "currently"},
+            {"LOWER": "being"},
+            {"LOWER": "conducted"},
+            {"LOWER": "remotely"}
+          ],
+          "matchTerm" : "interviews are currently being conducted remotely"
+     },
+     {    "phrasePatterns" :   [
+           {"LOWER": "work"},
+            {"POS": "ADP"},
+            {"LOWER": "remote"},
+            {"LOWER": "team"},
+            {"LOWER": "members"}
+          ],
+          "matchTerm" : "Work with remote team members"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "leading"},
+            {"LOWER": "remote"},
+            {"LOWER": "and"},
+            {"LOWER": "onsite"},
+            {"LOWER": "teams"}
+          ],
+          "matchTerm" : "leading remote and onsite teams"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "and"},
+            {"LOWER": "in"},
+            {"ORTH": "-"},
+            {"LOWER": "office"},
+            {"LOWER": "employees"}
+          ],
+          "matchTerm" : "remote and in-office employees"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "monitoring"}
+          ],
+          "matchTerm" : "remote monitoring"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "familiar"},
+            {"LOWER": "with"},
+            {"LOWER": "remote"},
+            {"LOWER": "software"}
+          ],
+          "matchTerm" : "familiar with remote software"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "travel"},
+            {"LOWER": "to"},
+            {"LOWER": "remote"}
+          ],
+          "matchTerm" : "travel to remote"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "control"}
+          ],
+          "matchTerm" : "remote control"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "remote"},
+            {"LOWER": "24"},
+            {"ORTH": "-"},
+            {"LOWER": "hour"},
+            {"LOWER": "patient"}
+          ],
+          "matchTerm" : "remote 24-hour patient"
+     },
+     {    "phrasePatterns" :   [
+            {"LOWER": "alignment"},
+            {"LOWER": "remote"},
+            {"LOWER": "weighs"}
+          ],
+          "matchTerm" : "alignment remote weighs"
+     }
+  ]

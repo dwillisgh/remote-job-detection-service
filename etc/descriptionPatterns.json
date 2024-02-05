@@ -1,0 +1,208 @@
+[
+     { "phrasePatterns" :  [
+            {"LOWER": "position"},
+            {"LEMMA": "be"},
+            {"LOWER": "fully"},
+            {"LOWER": "remote"}
+        ],
+        "matchTerm" : "position is fully remote"
+     },
+  {
+    "phrasePatterns": [
+      {"LOWER": "employee"},
+      {"LOWER": "choice"},
+      {"LOWER": "to"},
+      {"LOWER": "work"},
+      {"LOWER": "remote"}
+    ],
+    "matchTerm": "Employee, choice to work remote"
+  },
+  {
+    "phrasePatterns":  [
+      {"LOWER": "work"},
+      {"LOWER": "remote"}
+    ],
+    "matchTerm": "work remote"
+  },
+  {
+    "phrasePatterns": [
+      {"LOWER": "remote"},
+      {"LOWER": "work", "OP": "*"},
+      {"LOWER": "opportunity"}
+    ],
+    "matchTerm": "remote opportunity | remote work opportunity"
+  },
+  {
+    "phrasePatterns":  [
+      {"LOWER": "remote"},
+         {"LOWER": "work", "OP": "*"},
+         {"LOWER": "opportunities"}
+    ],
+    "matchTerm": "remote opportunities | remote work opportunities"
+  },
+  {
+    "phrasePatterns":  [
+     {"LOWER": "position"},
+         {"LEMMA": "be", "OP": "?"},
+         {"SHAPE": "ddd"},
+         {"ORTH": "%"},
+         {"LOWER": "remote"},
+         {"IS_PUNCT": true, "OP": "*"}
+    ],
+    "matchTerm": "position is 100% remote || position 100% remote"
+  },
+  {
+    "phrasePatterns":  [
+      {"LOWER": "position"},
+         {"LEMMA": "be"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "position is remote"
+  },
+  {
+    "phrasePatterns":  [{"LOWER": "position"},
+         {"LEMMA": "be"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "position is remote"
+  },
+  {
+    "phrasePatterns":  [{"LOWER": "fully"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "fully remote"
+  },
+  {
+    "phrasePatterns":  [{"POS": "PRON"},
+         {"LEMMA": "be"},
+         {"POS": "DET"},
+         {"LOWER": "remote"},
+         {"LOWER": "position"},
+         {"IS_PUNCT": true, "OP": "*"}
+         ],
+    "matchTerm": "This is a remote position"
+  },
+  {
+    "phrasePatterns":  [{"LOWER": "location"},
+         {"IS_PUNCT": true, "OP": "*"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "Location: Remote | job location: remote | work location: remote"
+  },
+  {
+    "phrasePatterns":  [{"POS": "PRON"},
+         {"LEMMA": "be"},
+         {"POS": "DET"},
+         {"SHAPE": "ddd"},
+         {"ORTH": "%"},
+         {"LOWER": "remote"},
+         {"LOWER": "position"},
+         {"IS_PUNCT": true, "OP": "*"}
+         ],
+    "matchTerm": "This is a 100% remote position"
+  },
+  {
+    "phrasePatterns":  [{"LOWER": "opportunities"},
+         {"LEMMA": "to"},
+         {"LOWER": "work"},
+         {"LOWER": "remotely"}
+         ],
+    "matchTerm": "opportunities to work remotely"
+  },
+  {
+    "phrasePatterns":  [{"ORTH": "#"},
+         {"LOWER": "li"},
+         {"ORTH": "-"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "#LI-REMOTE"
+  },
+  {
+    "phrasePatterns":  [{"POS": "PRON"},
+         {"LEMMA": "be"},
+         {"POS": "DET"},
+         {"SHAPE": "ddd", "OP": "*"},
+         {"ORTH": "%", "OP": "*" },
+         {"LOWER": "remote"},
+         {"LOWER": "role"},
+         {"IS_PUNCT": true, "OP": "*"}
+         ],
+    "matchTerm": "This is a 100% remote role"
+  },
+  {
+    "phrasePatterns":  [{"LOWER": "location"},
+         {"IS_PUNCT": true, "OP": "*"},
+         {"LOWER": "anywhere"},
+         {"ORTH": "(", "OP": "*"},
+         {"LOWER": "remote"},
+         {"ORTH": ")", "OP": "*"}
+         ],
+    "matchTerm": "location: anywhere (remote)"
+  },
+  {
+    "phrasePatterns":   [{"LOWER": "choose"},
+         {"SHAPE": "d"},
+         {"ORTH": ":"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "Choose 1: REMOTE"
+  },
+   {
+    "phrasePatterns":   [{"LOWER": "this"},
+         {"LOWER": "is"},
+         {"LOWER": "a"},
+         {"LOWER": "remote"},
+         {"IS_PUNCT": true, "OP": "*"},
+         {"LOWER": "work"},
+         {"LOWER": "from"},
+         {"LOWER": "home"},
+         {"LOWER": "position"},
+         {"IS_PUNCT": true, "OP": "*"}
+         ],
+    "matchTerm": "This is a remote, work from home position."
+  },
+  {
+    "phrasePatterns":   [{"LOWER": "open"},
+         {"LOWER": "to"},
+         {"LOWER": "remote"},
+         {"LOWER": "work"}
+         ],
+    "matchTerm": "Open to remote work"
+  },
+  {
+    "phrasePatterns":   [{"LOWER": "full"},
+         {"LOWER": "time"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "full time remote"
+  },
+  {
+    "phrasePatterns":   [{"LOWER": "remote"},
+         {"LOWER": "position"}
+         ],
+    "matchTerm": "Remote position"
+  },
+  {
+    "phrasePatterns":    [{"LOWER": "this"},
+         {"LOWER": "role"},
+         {"LOWER": "can"},
+         {"LOWER": "be"},
+         {"LOWER": "remote"}
+         ],
+    "matchTerm": "this role can be remote"
+  },
+  {
+    "phrasePatterns":    [{"LOWER": "this"},
+         {"LOWER": "is"},
+         {"LOWER": "a"},
+         {"LOWER": "home"},
+         {"ORTH": "-"},
+         {"LOWER": "based"},
+         {"ORTH": "(", "OP": "*"},
+         {"LOWER": "remote"},
+         {"ORTH": ")", "OP": "*"},
+         {"LOWER": "position"}
+         ],
+    "matchTerm": "This is a home - based (remote) position"
+  }
+  ]

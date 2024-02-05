@@ -1,0 +1,14 @@
+[
+     { "phrasePatterns" :  [
+            {"IS_PUNCT": true},
+            {"LOWER": "remote"},
+            {"IS_PUNCT": true}
+        ],
+        "matchTerm" : "(remote)"
+     },
+     { "phrasePatterns" :  [
+            {"LOWER": "remote"}
+        ],
+        "matchTerm" : "remote"
+     }
+  ]
