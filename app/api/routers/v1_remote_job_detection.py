@@ -14,12 +14,14 @@ router = APIRouter()
 @router.post(
     path="/remotejobdetect",
     response_model=RemoteJobDetectionResponse,
+    response_model_exclude_none=True,
     summary="Given a JobPosting object as input, return remote job pattern matches'",
 )
 async def extract_remote_patterns_job_posting(
-        jobposting: JobPosting
+        jobposting: JobPosting,
+        researchpatterns: bool = False
 ) -> Any:
-    data = await extract_remote_patterns(jobposting)
+    data = await extract_remote_patterns(jobposting, researchpatterns)
 
     remotejobdetectionresponse = RemoteJobDetectionResponse(**data)
 

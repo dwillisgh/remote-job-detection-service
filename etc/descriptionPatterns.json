@@ -1,7 +1,7 @@
 [
      { "phrasePatterns" :  [
             {"LOWER": "position"},
-            {"LEMMA": "be"},
+            {"LOWER": "is"},
             {"LOWER": "fully"},
             {"LOWER": "remote"}
         ],
@@ -43,7 +43,7 @@
   {
     "phrasePatterns":  [
      {"LOWER": "position"},
-         {"LEMMA": "be", "OP": "?"},
+         {"LOWER": "is", "OP": "?"},
          {"SHAPE": "ddd"},
          {"ORTH": "%"},
          {"LOWER": "remote"},
@@ -54,14 +54,14 @@
   {
     "phrasePatterns":  [
       {"LOWER": "position"},
-         {"LEMMA": "be"},
+         {"LOWER": "is"},
          {"LOWER": "remote"}
          ],
     "matchTerm": "position is remote"
   },
   {
     "phrasePatterns":  [{"LOWER": "position"},
-         {"LEMMA": "be"},
+         {"LOWER": "is"},
          {"LOWER": "remote"}
          ],
     "matchTerm": "position is remote"
@@ -74,7 +74,7 @@
   },
   {
     "phrasePatterns":  [{"POS": "PRON"},
-         {"LEMMA": "be"},
+         {"LOWER": "is"},
          {"POS": "DET"},
          {"LOWER": "remote"},
          {"LOWER": "position"},
@@ -91,7 +91,7 @@
   },
   {
     "phrasePatterns":  [{"POS": "PRON"},
-         {"LEMMA": "be"},
+         {"LOWER": "is"},
          {"POS": "DET"},
          {"SHAPE": "ddd"},
          {"ORTH": "%"},
@@ -103,7 +103,7 @@
   },
   {
     "phrasePatterns":  [{"LOWER": "opportunities"},
-         {"LEMMA": "to"},
+         {"LOWER": "to"},
          {"LOWER": "work"},
          {"LOWER": "remotely"}
          ],
@@ -119,7 +119,7 @@
   },
   {
     "phrasePatterns":  [{"POS": "PRON"},
-         {"LEMMA": "be"},
+         {"LOWER": "is"},
          {"POS": "DET"},
          {"SHAPE": "ddd", "OP": "*"},
          {"ORTH": "%", "OP": "*" },

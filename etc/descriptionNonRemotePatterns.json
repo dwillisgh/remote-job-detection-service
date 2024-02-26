@@ -20,7 +20,7 @@
      },
      { "phrasePatterns" :  [
           {"LOWER": "this"},
-            {"LEMMA": "be"},
+            {"LOWER": "is"},
             {"LOWER": "not"},
             {"POS": "DET"},
             {"LOWER": "remote"},
@@ -30,12 +30,12 @@
      },
    { "phrasePatterns" :  [
           {"LOWER": "position"},
-            {"LEMMA": "be"},
+            {"LOWER": "is"},
             {"LOWER": "in"},
             {"POS": "PROPN", "OP": "?"},
             {"POS": "NOUN", "OP": "?"},
             {"LOWER": "and"},
-             {"LEMMA": "be", "OP": "?"},
+             {"LOWER": "is", "OP": "?"},
             {"LOWER": "not"},
             {"LOWER": "eligible"},
             {"LOWER": "for"},
@@ -46,7 +46,7 @@
      { "phrasePatterns" :  [
           {"LOWER": "this"},
           {"LOWER": "role"},
-          {"LEMMA": "be"},
+          {"LOWER": "is"},
           {"LOWER": "not"},
           {"LOWER": "a"},
           {"LOWER": "hybrid"},

@@ -107,7 +107,7 @@
      },
      {    "phrasePatterns" :   [
            {"LOWER": "interviews"},
-            {"LEMMA": "be"},
+            {"LOWER": "are"},
             {"LOWER": "currently"},
             {"LOWER": "being"},
             {"LOWER": "conducted"},

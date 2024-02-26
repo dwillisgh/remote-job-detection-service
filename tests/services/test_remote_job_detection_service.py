@@ -10,4 +10,5 @@ async def test_extract_remote_patterns_description():
 
     response = await remote_job_detection_service.extract_remote_patterns_description(jobposting)
     assert len(response) == 2
-    assert all([a == b for a, b in zip(response, ["remote position","This is a remote position"])])
+    assert all([a == b for a, b in zip(response, ["remote position", "This is a remote position"])])
+

@@ -10,7 +10,7 @@
      { "phrasePatterns" :  [
             {"LOWER": "this"},
             {"LOWER": "role"},
-            {"LEMMA": "be"},
+            {"LOWER": "is"},
             {"LOWER": "offered"},
             {"LOWER": "as"},
             {"LOWER": "a"},

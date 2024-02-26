@@ -39,3 +39,4 @@ class RemoteJobDetectionResponse(BaseModel):
                                                     default=None
                                                     )
     jobLocationType: Optional[str] = None
+    identifier: Optional[str] = None
