@@ -6,18 +6,24 @@ description
 addresslocality
 title
 
+
+
+running locally you call
+
+post http://0.0.0.0:8000/jobs-remote-job-detection-service/v1/remotejobdetect
+
+Request
+Any job posting json object
+
 Response
 {
     "descriptionmatches": [
-        "opportunities to work remotely"
+        "remote position",
+        "This is a remote position",
+        "This is a remote position.",
+        "remote position"
     ],
-    "descriptionremotematches": null,
-    "addresslocalitymatches": [
-        "Remote"
-    ],
-    "titlematches": null,
-    "descriptionfalsepositiveremotematches": null,
-    "descriptionnonremotematches": null,
-    "descriptionhybridmatches": null,
-    "jobLocationType": "TELECOMMUTE"
+    "descriptionnonremotematches": [
+        "this is not a remote position"
+    ]
 }
