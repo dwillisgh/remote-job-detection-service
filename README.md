@@ -1,10 +1,11 @@
-nlp service to detect whether a job is a remote job
+NLP service to detect whether a job is a remote job
 accepts a JobPosting json 
 returns matches for these JobPosting fields
 
 description
 addresslocality
 title
+employmentType
 
 
 
