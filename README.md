@@ -28,3 +28,8 @@ Response
         "this is not a remote position"
     ]
 }
+
+To see all the patterns used for each field
+
+get http://0.0.0.0:8000/jobs-remote-job-detection-service/v1/remotepatterns
+
